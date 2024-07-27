@@ -25,7 +25,7 @@ s3 = boto3.client(
 app = Flask(__name__)
 
 # Database configuration
-app.config['SQLALCHEMY_DATABASE_URI'] = 'mysql+pymysql://root:0000@localhost:3306/web_service_api'
+app.config['SQLALCHEMY_DATABASE_URI'] = 'mysql+pymysql://admin:Sudeera2001@database-2.cp866camqt72.eu-north-1.rds.amazonaws.com:3306/web_service_api'
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 
 db = SQLAlchemy(app)
